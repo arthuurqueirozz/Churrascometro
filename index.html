@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascometro</title>
+</head>
+
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+
+    .container{
+        margin-top: 10px;
+        margin: auto;
+        padding: 20px;
+        background-color: rgb(192, 215, 235);
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    input{
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1>Churrascômetro</h1>
+        
+        <input placeholder="Adultos" type="number" name="adultos" id="adultos">
+        <input placeholder="Crianças" type="number" name="Crianças" id="criancas">
+        <input placeholder="Duração(h)" type="number" name="horas" id="horas">
+        
+        <button onclick="calculo()">Calcular</button>
+
+        <div id="resultado">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
